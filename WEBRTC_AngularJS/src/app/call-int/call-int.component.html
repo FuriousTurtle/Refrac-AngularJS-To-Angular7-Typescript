@@ -1,0 +1,85 @@
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">XiVO CC Sample </a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Vanilla - Version 7</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+      <div class="panel panel-default">
+        <div class="panel-heading">Use callbacks</div>
+        <div class="panel-body">
+            <form class="form-inline" ng-submit="logMeIn()">
+                <div class="form-group">
+                    <label for="login">Login</label>
+                    <input type="text" class="form-control" id="login" ng-model="login" placeholder="Login" ng-required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" ng-model="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone number</label>
+                    <input type="text" class="form-control" id="phoneNumber" ng-model="phoneNumber" placeholder="Phone Number" ng-required>
+                </div>
+                <button type="submit" class="btn btn-default">Login</button>
+            </form>
+            <hr />
+            <form class="form-inline" ng-submit="toggleACD()">
+                <div class="form-group">
+                    <label for="state">ACD Status</label>
+                    <input type="text" class="form-control" id="state" readonly>
+                </div>
+                <button type="submit" class="btn btn-default" id="toggleACD">Login ACD</button>
+            </form>
+            <hr />
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="state">Number</label>
+                    <input type="text" class="form-control" id="dialPhoneNumber">
+                </div>
+                <button class="btn btn-default" ng-click="dial()">Dial</button>
+                <button class="btn btn-default" ng-click="hangup()">Hangup</button>
+            </form>
+            <hr />
+            <table class="table table-striped">
+              <tr>
+                <th>Numéro de callback</th>
+                <th>Période</th>
+                <th>Action</th>
+              </tr>
+              <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+              </tr>
+            </table>
+            <div id="response"></div>
+            <hr />
+            <div class="row">
+              <div class="col-md-6">Websocket Stream</div>
+              <div class="col-md-6">Agents live statuses</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><textarea cols="60" rows="15" id="stream"></textarea></div>
+              <div class="col-md-6"><textarea cols="60" rows="15" id="status"></textarea></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <img class="logo" src="./images/logo.png" />
+    </footer>
+    <script src="cti.js"></script>
+    <script src="manifest.bundle.js"></script>
+    <script src="vendor.bundle.js"></script>
+    <script src="xccti.bundle.js"></script>
+    <script src="app.bundle.js"></script>
