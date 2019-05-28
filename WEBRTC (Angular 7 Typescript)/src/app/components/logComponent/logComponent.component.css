@@ -1,0 +1,41 @@
+.btn {
+    background-color: crimson;
+    color:white;
+    margin-left : 10px;
+}
+
+label {
+    margin: 0px 10px;
+}
+.top-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.panel-body {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.forma {
+    width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.subbtn {
+    width: 100px;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.panel-bottom {
+    display: flex;
+    justify-content: flex-end;
+}

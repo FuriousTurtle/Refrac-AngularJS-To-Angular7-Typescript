@@ -1,0 +1,16 @@
+.btn {
+    background-color: crimson;
+    color:white;
+    margin-left : 10px;
+}
+
+label {
+    margin: 0px 10px;
+}
+.top-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
