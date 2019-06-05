@@ -1,7 +1,3 @@
-# Refrac-AngularJS-To-Angular7-Typescript
-Turned a WEBRTC calling app from AngularJS to Angular 7 Typescript
-
-
 # XiVO Webapp from AngularJS to Angular 7 
 
 Link : [https://github.com/FuriousTurtle/Refrac-AngularJS-To-Angular7-Typescript](https://github.com/FuriousTurtle/Refrac-AngularJS-To-Angular7-Typescript)
